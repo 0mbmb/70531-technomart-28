@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Alexander K](https://up.htmlacademy.ru/htmlcss/28/user/70531).
-* Наставник: `Неизвестно`.
+* Наставник: [Ольга Поликашина](https://htmlacademy.ru/profile/id890283).
 
 ---
 
