@@ -105,7 +105,7 @@
         <ul class="catalog__list">
           <li class="catalog__item">
             <img src="img/item-1.jpg" width="184" height="164" class="catalog__item-image" alt="Перфоратор BOSCH BFG 9000">
-            <a href="catalog__item-link" href="#">
+            <a class="catalog__item-link" href="#">
               <h3 class="catalog__item-name">Перфоратор BOSCH BFG 9000</h3>
               <p class="catalog__item-oldprice">32500 Р.</p>
               <p class="catalog__item-price">25500 Р.</p>
@@ -115,7 +115,7 @@
           </li>
           <li class="catalog__item">
             <img src="img/item-1.jpg" width="184" height="164" class="catalog__item-image" alt="Перфоратор BOSCH BFG 9000">
-            <a href="catalog__item-link" href="#">
+            <a class="catalog__item-link" href="#">
               <h3 class="catalog__item-name">Перфоратор BOSCH BFG 9000</h3>
               <p class="catalog__item-oldprice">32500 Р.</p>
               <p class="catalog__item-price">25500 Р.</p>
@@ -125,7 +125,7 @@
           </li>
           <li class="catalog__item">
             <img src="img/item-1.jpg" width="184" height="164" class="catalog__item-image" alt="Перфоратор BOSCH BFG 9000">
-            <a href="catalog__item-link" href="#">
+            <a class="catalog__item-link" href="#">
               <h3 class="catalog__item-name">Перфоратор BOSCH BFG 9000</h3>
               <p class="catalog__item-oldprice">32500 Р.</p>
               <p class="catalog__item-price">25500 Р.</p>
@@ -135,7 +135,7 @@
           </li>
           <li class="catalog__item">
             <img src="img/item-1.jpg" width="184" height="164" class="catalog__item-image" alt="Перфоратор BOSCH BFG 9000">
-            <a href="catalog__item-link" href="#">
+            <a class="catalog__item-link" href="#">
               <h3 class="catalog__item-name">Перфоратор BOSCH BFG 9000</h3>
               <p class="catalog__item-oldprice">32500 Р.</p>
               <p class="catalog__item-price">25500 Р.</p>
@@ -145,7 +145,7 @@
           </li>
           <li class="catalog__item">
             <img src="img/item-1.jpg" width="184" height="164" class="catalog__item-image" alt="Перфоратор BOSCH BFG 9000">
-            <a href="catalog__item-link" href="#">
+            <a class="catalog__item-link" href="#">
               <h3 class="catalog__item-name">Перфоратор BOSCH BFG 9000</h3>
               <p class="catalog__item-oldprice">32500 Р.</p>
               <p class="catalog__item-price">25500 Р.</p>
@@ -155,7 +155,7 @@
           </li>
           <li class="catalog__item">
             <img src="img/item-1.jpg" width="184" height="164" class="catalog__item-image" alt="Перфоратор BOSCH BFG 9000">
-            <a href="catalog__item-link" href="#">
+            <a class="catalog__item-link" href="#">
               <h3 class="catalog__item-name">Перфоратор BOSCH BFG 9000</h3>
               <p class="catalog__item-oldprice">32500 Р.</p>
               <p class="catalog__item-price">25500 Р.</p>
@@ -165,7 +165,7 @@
           </li>
           <li class="catalog__item">
             <img src="img/item-1.jpg" width="184" height="164" class="catalog__item-image" alt="Перфоратор BOSCH BFG 9000">
-            <a href="catalog__item-link" href="#">
+            <a class="catalog__item-link" href="#">
               <h3 class="catalog__item-name">Перфоратор BOSCH BFG 9000</h3>
               <p class="catalog__item-oldprice">32500 Р.</p>
               <p class="catalog__item-price">25500 Р.</p>
@@ -175,7 +175,7 @@
           </li>
           <li class="catalog__item">
             <img src="img/item-1.jpg" width="184" height="164" class="catalog__item-image" alt="Перфоратор BOSCH BFG 9000">
-            <a href="catalog__item-link" href="#">
+            <a class="catalog__item-link" href="#">
               <h3 class="catalog__item-name">Перфоратор BOSCH BFG 9000</h3>
               <p class="catalog__item-oldprice">32500 Р.</p>
               <p class="catalog__item-price">25500 Р.</p>
@@ -185,7 +185,7 @@
           </li>
           <li class="catalog__item">
             <img src="img/item-1.jpg" width="184" height="164" class="catalog__item-image" alt="Перфоратор BOSCH BFG 9000">
-            <a href="catalog__item-link" href="#">
+            <a class="catalog__item-link" href="#">
               <h3 class="catalog__item-name">Перфоратор BOSCH BFG 9000</h3>
               <p class="catalog__item-oldprice">32500 Р.</p>
               <p class="catalog__item-price">25500 Р.</p>
@@ -200,45 +200,63 @@
       <aside class="filter">
 
         <p class="filter__heading">Фильтр:</p>
-        <form class="filter__form" action="https://echo.htmlacademy.ru" method="post">
+        <form class="filter__form" action="https://echo.htmlacademy.ru" method="get">
           <p class="filter__price">
             <!-- Фильтр по цене -->
           </p>
-          <p class="filter__vendors">
-            <b>Производители:</b>
-            <label>
-              <input type="checkbox" name="vendor" value="BOSCH" checked>
-              BOSCH
-            </label>
-            <label>
-              <input type="checkbox" name="vendor" value="Интерскол">
-              Интерскол
-            </label>
-            <label>
-              <input type="checkbox" name="vendor" value="Makita" checked>
-              Makita
-            </label>
-            <label>
-              <input type="checkbox" name="vendor" value="Dewalt">
-              Dewalt
-            </label>
-            <label>
-              <input type="checkbox" name="vendor" value="Hitachi">
-              Hitachi
-            </label>
-          </p>
+          <fieldset class="filter__vendors">
+            <legend>Производители:</legend>
+            <ul>
+              <li>
+                <label>
+                  <input type="checkbox" name="vendor" value="BOSCH" checked>
+                  BOSCH
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" name="vendor" value="Интерскол">
+                  Интерскол
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" name="vendor" value="Makita" checked>
+                  Makita
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" name="vendor" value="Dewalt">
+                  Dewalt
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" name="vendor" value="Hitachi">
+                  Hitachi
+                </label>
+              </li>
+            </ul>
+          </fieldset>
 
-          <p class="filter__power">
-            <b>Питание:</b>
-            <label>
-              <input type="radio" name="power" value="power-1" checked>
-              Аккумуляторные
-            </label>
-            <label>
-              <input type="radio" name="power" value="power-2">
-              Сетевые
-            </label>
-          </p>
+          <fieldset class="filter__power">
+            <legend>Питание:</legend>
+            <ul>
+              <li>
+                <label>
+                  <input type="radio" name="power" value="power-1" checked>
+                  Аккумуляторные
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="radio" name="power" value="power-2">
+                  Сетевые
+                </label>
+              </li>
+            </ul>
+          </fieldset>
 
           <button type="submit">Показать</button>
 
@@ -323,16 +341,16 @@
           Все права защищены
         </p>
         <p class="main-footer__social">
-          <a href="#" class="social social--vk">Вконтакте</a>
-          <a href="#" class="social social--fb">Facebook</a>
-          <a href="#" class="social social--insta">Instagram</a>
+          <a href="#" class="social social--vk" aria-label="Вконтакте">Вконтакте</a>
+          <a href="#" class="social social--fb" aria-label="Facebook">Facebook</a>
+          <a href="#" class="social social--insta" aria-label="Instagram">Instagram</a>
         </p>
         <p class="main-footer__feedback">
-          Обратная связь:</br>
+          Обратная связь:<br>
           <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
         </p>
         <p class="main-footer__developer">
-          Разработано —</br>
+          Разработано —<br>
           <a href="https://htmlacademy.ru">htmlacademy.ru</a>
         </p>
       </div>
