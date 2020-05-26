@@ -1,0 +1,28 @@
+:root {
+  --basic-red: #EE3643;
+  --basic-green: #63A63E;
+  --basic-grey: #3D546F;
+  --basic-lightgrey: #C5C5C5;
+  --special-yellow: #FFBF47;
+  --special-blue: #3BBCE3;
+  --special-lilac: #DC91D8;
+  --special-lightgreen: #8ED78F;
+  --special-lightyellow: #FFD180;
+  --special-success: #5FBB2D;
+  --special-warning: #FFBF47;
+  --special-error: #BA2732;
+}
+
+.visually-hidden:not(:focus), input[type=checkbox].visually-hidden, input[type=radio].visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    -webkit-clip-path: inset(100%);
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
