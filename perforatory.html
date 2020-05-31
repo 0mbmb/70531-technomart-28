@@ -41,7 +41,7 @@
             </div>
             <nav class="user-nav">
               <div class="user-nav__existing">
-                <a href="#" class="user-nav__link">Равшан Джамшутович</a>
+                <a href="#" class="user-nav__link user-nav__link--icon user-nav__link--user">Равшан Джамшутович</a>
                 <ul class="user-nav__submenu-list">
                   <li class="user-nav__submenu-item">
                     <a href="#" class="user-nav__submenu-link">Мои заказы</a>
@@ -88,103 +88,92 @@
 
     <main class="catalog-page">
 
-      <nav class="breadcrumbs">
-        <ul class="breadcrumbs__list">
-          <li class="breadcrumbs__item">
-            <a href="index.html" class="breadcrumbs__link">На главную</a>
-          </li>
-          <li class="breadcrumbs__item">
-            <a href="#" class="breadcrumbs__link">Каталог</a>
-          </li>
-          <li class="breadcrumbs__item">
-            <a href="#" class="breadcrumbs__link">Инструмент</a>
-          </li>
-          <li class="breadcrumbs__item">
-            <a class="breadcrumbs__link">Перфораторы</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="wrapper wrapper--grid">
 
-      <h1 class="catalog-page__heading">Перфораторы</h1>
+        <nav class="breadcrumbs">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item">
+              <a href="index.html" class="breadcrumbs__link breadcrumbs__link--index"><span class="visually-hidden">На главную</span></a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a href="#" class="breadcrumbs__link">Каталог</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a href="#" class="breadcrumbs__link">Инструмент</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link">Перфораторы</a>
+            </li>
+          </ul>
+        </nav>
 
-      <aside class="filter">
+        <h1 class="section__heading section__heading--catalog">Перфораторы</h1>
 
-        <h2 class="filter__heading">Фильтр:</h2>
-        <form class="filter__form" action="https://echo.htmlacademy.ru" method="get">
-          <p class="filter__price">
-            <!-- Фильтр по цене -->
-          </p>
-          <fieldset class="filter__vendors">
-            <legend>Производители:</legend>
-            <ul>
-              <li>
-                <label>
-                  <input type="checkbox" name="vendor" value="BOSCH" checked>
-                  BOSCH
-                </label>
-              </li>
-              <li>
-                <label>
-                  <input type="checkbox" name="vendor" value="Интерскол">
-                  Интерскол
-                </label>
-              </li>
-              <li>
-                <label>
-                  <input type="checkbox" name="vendor" value="Makita" checked>
-                  Makita
-                </label>
-              </li>
-              <li>
-                <label>
-                  <input type="checkbox" name="vendor" value="Dewalt">
-                  Dewalt
-                </label>
-              </li>
-              <li>
-                <label>
-                  <input type="checkbox" name="vendor" value="Hitachi">
-                  Hitachi
-                </label>
-              </li>
-            </ul>
-          </fieldset>
+        <aside class="filter">
 
-          <fieldset class="filter__power">
-            <legend>Питание:</legend>
-            <ul>
-              <li>
-                <label>
-                  <input type="radio" name="power" value="power-1" checked>
-                  Аккумуляторные
-                </label>
-              </li>
-              <li>
-                <label>
-                  <input type="radio" name="power" value="power-2">
-                  Сетевые
-                </label>
-              </li>
-            </ul>
-          </fieldset>
+          <h2 class="filter__heading">Фильтр:</h2>
+          <form class="filter__form" action="https://echo.htmlacademy.ru" method="get">
+            <p class="filter__price">
+              <!-- Фильтр по цене -->
+            </p>
+            <fieldset class="filter__vendors">
+              <legend>Производители:</legend>
+              <ul class="filter__vendors-list">
+                <li>
+                  <input type="checkbox" name="vendor" id="bosch" value="BOSCH" class="filter__vendors-checkbox visually-hidden" checked>
+                  <label for="bosch" class="filter__vendor-label">BOSCH</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="vendor" id="interskol" value="Интерскол" class="filter__vendors-checkbox visually-hidden">
+                  <label for="interskol" class="filter__vendor-label">Интерскол</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="vendor" id="makita" value="Makita" class="filter__vendors-checkbox visually-hidden" checked>
+                  <label for="makita" class="filter__vendor-label">Makita</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="vendor" id="dewalt" value="Dewalt" class="filter__vendors-checkbox visually-hidden">
+                  <label for="dewalt" class="filter__vendor-label">Dewalt</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="vendor" id="hitachi" value="Hitachi" class="filter__vendors-checkbox visually-hidden">
+                  <label for="hitachi" class="filter__vendor-label">Hitachi</label>
+                </li>
+              </ul>
+            </fieldset>
 
-          <button type="submit">Показать</button>
+            <fieldset class="filter__power">
+              <legend>Питание:</legend>
+              <ul class="filter__power-list">
+                <li>
+                  <input type="radio" name="power" id="power-1" value="power-1" class="filter__power-radio visually-hidden" checked>
+                  <label for="power-1" class="filter__power-label">Аккумуляторные</label>
+                </li>
+                <li>
+                  <input type="radio" name="power" id="power-2" value="power-2" class="filter__power-radio visually-hidden">
+                  <label for="power-2" class="filter__power-label">Сетевые</label>
+                </li>
+              </ul>
+            </fieldset>
 
-        </form>
-      </aside>
+            <button type="submit" class="filter__button">Показать</button>
 
-      <section class="catalog">
+          </form>
+        </aside>
 
-        <h2 class="catalog__heading">Сортировка:</h2>
-        <a href="#" class="catalog__sorting">По цене</a>
-        <a href="#" class="catalog__sorting">По типу</a>
-        <a href="#" class="catalog__sorting">По функционалу</a>
-        <a href="#" class="catalog__sorting">По-возрастанию</a>
-        <a href="#" class="catalog__sorting">По-убыванию</a>
+        <section class="catalog">
 
-        <ul class="catalog__list">
-          <li>
-            <article class="catalog__item">
+          <div class="catalog__filter">
+            <h2 class="catalog__heading">Сортировка:</h2>
+            <a class="catalog__sorting catalog__sorting--active">По цене</a>
+            <a href="#" class="catalog__sorting">По типу</a>
+            <a href="#" class="catalog__sorting">По функционалу</a>
+            <a class="catalog__sorting-dir catalog__sorting-dir--asc catalog__sorting-dir--active"><span class="visually-hidden">По-возрастанию</span></a>
+            <a href="#" class="catalog__sorting-dir catalog__sorting-dir--desc"><span class="visually-hidden">По-убыванию</span></a>
+          </div>
+
+          <ul class="catalog__list">
+            <li class="catalog__item">
               <div class="catalog__buttons">
                 <button class="catalog__button catalog__button--add-to-cart button" type="button">Купить</button>
                 <button class="catalog__button catalog__button--wishlist button" type="button">В закладки</button>
@@ -195,10 +184,8 @@
               </a>
               <p class="catalog__item-oldprice">32500 Р.</p>
               <p class="catalog__item-price">25500 Р.</p>
-            </article>
-          </li>
-          <li>
-            <article class="catalog__item">
+            </li>
+            <li class="catalog__item">
               <div class="catalog__buttons">
                 <button class="catalog__button catalog__button--add-to-cart button" type="button">Купить</button>
                 <button class="catalog__button catalog__button--wishlist button" type="button">В закладки</button>
@@ -209,10 +196,8 @@
               </a>
               <p class="catalog__item-oldprice">32500 Р.</p>
               <p class="catalog__item-price">25500 Р.</p>
-            </article>
-          </li>
-          <li>
-            <article class="catalog__item">
+            </li>
+            <li class="catalog__item">
               <div class="catalog__buttons">
                 <button class="catalog__button catalog__button--add-to-cart button" type="button">Купить</button>
                 <button class="catalog__button catalog__button--wishlist button" type="button">В закладки</button>
@@ -223,10 +208,8 @@
               </a>
               <p class="catalog__item-oldprice">32500 Р.</p>
               <p class="catalog__item-price">25500 Р.</p>
-            </article>
-          </li>
-          <li>
-            <article class="catalog__item">
+            </li>
+            <li class="catalog__item">
               <div class="catalog__buttons">
                 <button class="catalog__button catalog__button--add-to-cart button" type="button">Купить</button>
                 <button class="catalog__button catalog__button--wishlist button" type="button">В закладки</button>
@@ -237,10 +220,8 @@
               </a>
               <p class="catalog__item-oldprice">32500 Р.</p>
               <p class="catalog__item-price">25500 Р.</p>
-            </article>
-          </li>
-          <li>
-            <article class="catalog__item">
+            </li>
+            <li class="catalog__item">
               <div class="catalog__buttons">
                 <button class="catalog__button catalog__button--add-to-cart button" type="button">Купить</button>
                 <button class="catalog__button catalog__button--wishlist button" type="button">В закладки</button>
@@ -251,10 +232,8 @@
               </a>
               <p class="catalog__item-oldprice">32500 Р.</p>
               <p class="catalog__item-price">25500 Р.</p>
-            </article>
-          </li>
-          <li>
-            <article class="catalog__item">
+            </li>
+            <li class="catalog__item">
               <div class="catalog__buttons">
                 <button class="catalog__button catalog__button--add-to-cart button" type="button">Купить</button>
                 <button class="catalog__button catalog__button--wishlist button" type="button">В закладки</button>
@@ -265,10 +244,8 @@
               </a>
               <p class="catalog__item-oldprice">32500 Р.</p>
               <p class="catalog__item-price">25500 Р.</p>
-            </article>
-          </li>
-          <li>
-            <article class="catalog__item">
+            </li>
+            <li class="catalog__item">
               <div class="catalog__buttons">
                 <button class="catalog__button catalog__button--add-to-cart button" type="button">Купить</button>
                 <button class="catalog__button catalog__button--wishlist button" type="button">В закладки</button>
@@ -279,10 +256,8 @@
               </a>
               <p class="catalog__item-oldprice">32500 Р.</p>
               <p class="catalog__item-price">25500 Р.</p>
-            </article>
-          </li>
-          <li>
-            <article class="catalog__item">
+            </li>
+            <li class="catalog__item">
               <div class="catalog__buttons">
                 <button class="catalog__button catalog__button--add-to-cart button" type="button">Купить</button>
                 <button class="catalog__button catalog__button--wishlist button" type="button">В закладки</button>
@@ -293,10 +268,8 @@
               </a>
               <p class="catalog__item-oldprice">32500 Р.</p>
               <p class="catalog__item-price">25500 Р.</p>
-            </article>
-          </li>
-          <li>
-            <article class="catalog__item">
+            </li>
+            <li class="catalog__item">
               <div class="catalog__buttons">
                 <button class="catalog__button catalog__button--add-to-cart button" type="button">Купить</button>
                 <button class="catalog__button catalog__button--wishlist button" type="button">В закладки</button>
@@ -307,30 +280,31 @@
               </a>
               <p class="catalog__item-oldprice">32500 Р.</p>
               <p class="catalog__item-price">25500 Р.</p>
-            </article>
+            </li>
+          </ul>
+
+        </section>
+
+        <ul class="pagination">
+          <li class="pagination__item">
+            <a class="pagination__link pagination__link--active">1</a>
+          </li>
+          <li class="pagination__item">
+            <a href="#" class="pagination__link">2</a>
+          </li>
+          <li class="pagination__item">
+            <a href="#" class="pagination__link">3</a>
+          </li>
+          <li class="pagination__item">
+            <a href="#" class="pagination__link pagination__link--next">Следующая</a>
           </li>
         </ul>
 
-      </section>
-
-      <ul class="pagination">
-        <li class="pagination__item">
-          <a href="#" class="pagination__link">1</a>
-        </li>
-        <li class="pagination__item">
-          <a href="#" class="pagination__link">2</a>
-        </li>
-        <li class="pagination__item">
-          <a href="#" class="pagination__link">3</a>
-        </li>
-        <li class="pagination__item">
-          <a href="#" class="pagination__link">Следующая</a>
-        </li>
-      </ul>
+      </div>
 
       <section class="seo">
         <div class="wrapper">
-          <h2 class="section__heading section__heading--seo">ПАРА СЛОВ О ПЕРФОРАТОРАХ</h2>
+          <h2 class="section__heading section__heading--seo">Пара слов о перфораторах</h2>
           <p class="section__description section__description--seo">
             Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
             Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
@@ -393,7 +367,7 @@
       <div class="main-footer__bottom">
         <div class="wrapper">
           <p class="main-footer__copyright">
-            &copy; 2010–2019 Компания «Техномарт» <br>
+            &copy; 2010–2019 Компания &laquo;Техномарт&raquo; 
             Все права защищены
           </p>
           <p class="main-footer__social">
@@ -418,14 +392,11 @@
         <div class="modal__wrapper">
           <p class="cart__heading">Товар добавлен в корзину!</p>
         </div>
-
         <div class="modal__button-wrapper">
           <a href="#" class="cart__checkout button">Оформить заказ</a>
           <button class="cart__shopping button" type="button">Продолжить покупки</button>
         </div>
-
         <button class="modal__close modal__close--cart" type="button">Закрыть</button>
-
     </section>
 
   <script src="js/script.js"></script>
