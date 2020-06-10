@@ -113,9 +113,22 @@
 
           <h2 class="filter__heading">Фильтр:</h2>
           <form class="filter__form" action="https://echo.htmlacademy.ru" method="get">
-            <p class="filter__price">
-              <!-- Фильтр по цене -->
-            </p>
+
+            <fieldset class="filter__price">
+              <legend>Цена:</legend>
+              <div class="price__scale">
+                <div class="price__scale-bar" style="margin-left: 0%; width: 50%">
+                  <div class="price__toggle price__toggle--min" tabindex="0"></div>
+                  <div class="price__toggle price__toggle--max" tabindex="0"></div>
+                </div>
+              </div>
+              <div class="price__controls">
+                  <input type="number" class="price price--min" id="price__min" name="price__min" value="0" step="100">
+                  <span class="price__dash">—</span>
+                  <input type="number" class="price price--min" id="price__max" name="price__max" value="30000" step="100">
+              </div>
+            </fieldset>
+
             <fieldset class="filter__vendors">
               <legend>Производители:</legend>
               <ul class="filter__vendors-list">

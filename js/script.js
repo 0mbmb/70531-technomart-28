@@ -68,6 +68,15 @@ for (let modalCloseButton of allModalCloseButtons) {
   }
 }
 
+// Close all modals with ESC key
+for (let modal of allModals) {
+  document.addEventListener('keydown', function (evt) {
+    if (evt.keyCode === 27) {
+      modal.classList.add('visually-hidden');
+    }
+  });
+}
+
 // Add to cart modal open
 for (let addToCartButton of allAddToCartButtons) {
   addToCartButton.onclick = function (evt) {

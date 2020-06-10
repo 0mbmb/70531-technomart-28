@@ -87,11 +87,9 @@
 
       <h1 class="visually-hidden">Интернет-магазин Техномарт</h1>
 
-      <section class="categories">
+      <section class="categories wrapper">
 
         <h2 class="visually-hidden">Популярные категории</h2>
-
-        <div class="wrapper">
 
           <ul class="categories__list">
             <li class="slider">
@@ -144,13 +142,9 @@
             </li>
           </ul>
 
-        </div>
-
       </section>
 
-      <section class="bestsellers">
-
-        <div class="wrapper">
+      <section class="bestsellers wrapper">
 
           <div class="section__heading-wrapper">
             <h2 class="section__heading">Популярные товары:</h2>
@@ -208,13 +202,9 @@
             </li>
           </ul>
 
-        </div>
-
       </section>
 
-      <section class="vendors">
-
-        <div class="wrapper">
+      <section class="vendors wrapper">
 
           <div class="section__heading-wrapper">
             <h2 class="section__heading">Популярные производители:</h2>
@@ -264,8 +254,6 @@
             </li>
           </ul>
 
-        </div>
-
       </section>
 
       <section class="services">
@@ -311,11 +299,9 @@
 
       </section>
 
-      <section class="information">
+      <section class="information wrapper">
 
         <h2 class="visually-hidden">Информация о магазине Техномарт</h2>
-
-        <div class="wrapper">
 
           <div class="information__about">
             <h3 class="section__heading section__heading--information">Компания &#171;Техномарт&#187;</h3>
@@ -341,10 +327,8 @@
             <a href="#" class="information__map">
               <img src="img/map.png" class="information__map-image" width="300" height="158" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д.19/8">
             </a>
-            <a href="#" class="information__button information__button--contact-us button button--contact-us">Заблудились? Напишите нам!</a>
+            <a href="contactus.html" class="information__button information__button--contact-us button button--contact-us">Заблудились? Напишите нам!</a>
           </div>
-
-        </div>
 
       </section>
 
@@ -427,13 +411,13 @@
     <section class="modal contact-us visually-hidden">
         <form action="https://echo.htmlacademy.ru" method="post" class="contact-us__form">
           <div class="modal__wrapper">
-            <label for="name" class="contact-us__name">Ваше имя:
+            <label class="contact-us__name">Ваше имя:
               <input type="text" name="name" id="name" placeholder="Имя Фамилия" required>
             </label>
-            <label for="email" class="contact-us__email">Ваш e-mail:
+            <label class="contact-us__email">Ваш e-mail:
               <input type="email" name="email" id="email" placeholder="e-mail" required>
             </label>
-            <label for="comment" class="contact-us__comment">Текст письма:
+            <label class="contact-us__comment">Текст письма:
               <textarea name="comment" id="comment" placeholder="В свободной форме"></textarea>
             </label>
           </div>
@@ -447,7 +431,7 @@
     </section>
 
     <section class="modal map-modal visually-hidden">
-      <iframe src="https://yandex.ru/map-widget/v1/-/CKqQfLOs" width="943" height="449" frameborder="0" style="position:relative;"></iframe>
+      <iframe class="map-modal__iframe" src="https://yandex.ru/map-widget/v1/-/CKqQfLOs" width="943" height="449" style="position:relative;"></iframe>
       <button class="modal__close modal__close--map" type="button">Закрыть</button>
     </section>
 
