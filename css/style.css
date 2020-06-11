@@ -335,10 +335,12 @@ input[type=radio].visually-hidden {
   background-color: var(--checkout);
 }
 
+.main-header__wishlist--notempty,
 .main-header__cart--notempty {
   background-color: var(--basic-red);
 }
 
+.main-header__wishlist--notempty:active,
 .main-header__cart--notempty:active {
   background-color: var(--basic-darkerred);
 }
