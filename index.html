@@ -153,11 +153,13 @@
 
           <ul class="bestsellers__list">
             <li class="catalog__item">
-              <div class="catalog__buttons">
-                <button class="catalog__button catalog__button--add-to-cart button" type="button">Купить</button>
-                <button class="catalog__button catalog__button--wishlist button" type="button">В закладки</button>
+              <div class="catalog__item-image">
+                <div class="catalog__buttons">
+                  <button class="catalog__button catalog__button--add-to-cart button" type="button">Купить</button>
+                  <button class="catalog__button catalog__button--wishlist button" type="button">В закладки</button>
+                </div>
+                <img src="img/item-1.jpg" width="184" height="164" alt="Перфоратор BOSCH BFG 9000">
               </div>
-              <img src="img/item-1.jpg" width="184" height="164" class="catalog__item-image" alt="Перфоратор BOSCH BFG 9000">
               <a class="catalog__item-link" href="#">
                 <h3 class="catalog__item-name">Перфоратор BOSCH BFG 9000</h3>
               </a>
@@ -165,11 +167,13 @@
               <p class="catalog__item-price">25500 Р.</p>
             </li>
             <li class="catalog__item badge badge--new">
-              <div class="catalog__buttons">
-                <button class="catalog__button catalog__button--add-to-cart button" type="button">Купить</button>
-                <button class="catalog__button catalog__button--wishlist button" type="button">В закладки</button>
+              <div class="catalog__item-image">
+                <div class="catalog__buttons">
+                  <button class="catalog__button catalog__button--add-to-cart button" type="button">Купить</button>
+                  <button class="catalog__button catalog__button--wishlist button" type="button">В закладки</button>
+                </div>
+                <img src="img/item-2.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
               </div>
-              <img src="img/item-2.jpg" width="127" height="112" class="catalog__item-image" alt="Перфоратор BOSCH BFG 3000">
               <a class="catalog__item-link" href="#">
                 <h3 class="catalog__item-name">Перфоратор BOSCH BFG 3000</h3>
               </a>
@@ -177,11 +181,13 @@
               <p class="catalog__item-price">15500 Р.</p>
             </li>
             <li class="catalog__item">
-              <div class="catalog__buttons">
-                <button class="catalog__button catalog__button--add-to-cart button" type="button">Купить</button>
-                <button class="catalog__button catalog__button--wishlist button" type="button">В закладки</button>
+              <div class="catalog__item-image">
+                <div class="catalog__buttons">
+                  <button class="catalog__button catalog__button--add-to-cart button" type="button">Купить</button>
+                  <button class="catalog__button catalog__button--wishlist button" type="button">В закладки</button>
+                </div>
+                <img src="img/item-3.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
               </div>
-              <img src="img/item-3.jpg" width="144" height="128" class="catalog__item-image" alt="Перфоратор BOSCH BFG 6000">
               <a class="catalog__item-link" href="#">
                 <h3 class="catalog__item-name">Перфоратор BOSCH BFG 6000</h3>
               </a>
@@ -189,11 +195,13 @@
               <p class="catalog__item-price">25500 Р.</p>
             </li>
             <li class="catalog__item badge badge--new">
-              <div class="catalog__buttons">
-                <button class="catalog__button catalog__button--add-to-cart button" type="button">Купить</button>
-                <button class="catalog__button catalog__button--wishlist button" type="button">В закладки</button>
+              <div class="catalog__item-image">
+                <div class="catalog__buttons">
+                  <button class="catalog__button catalog__button--add-to-cart button" type="button">Купить</button>
+                  <button class="catalog__button catalog__button--wishlist button" type="button">В закладки</button>
+                </div>
+                <img src="img/item-2.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
               </div>
-              <img src="img/item-2.jpg" width="127" height="112" class="catalog__item-image" alt="Перфоратор BOSCH BFG 2000">
               <a class="catalog__item-link" href="#">
                 <h3 class="catalog__item-name">Перфоратор BOSCH BFG 2000</h3>
               </a>
@@ -409,43 +417,46 @@
     </footer>
 
     <section class="modal contact-us visually-hidden">
-        <form action="https://echo.htmlacademy.ru" method="post" class="contact-us__form">
+      <h2 class="visually-hidden">Связаться с нами</h2>
+      <form action="https://echo.htmlacademy.ru" method="post" class="contact-us__form">
+        <div class="modal__wrapper">
+          <label class="contact-us__name">Ваше имя:
+            <input type="text" name="name" id="name" placeholder="Имя Фамилия" required>
+          </label>
+          <label class="contact-us__email">Ваш e-mail:
+            <input type="email" name="email" id="email" placeholder="e-mail" required>
+          </label>
+          <label class="contact-us__comment">Текст письма:
+            <textarea name="comment" id="comment" placeholder="В свободной форме"></textarea>
+          </label>
+        </div>
+        <div class="modal__button-wrapper">
           <div class="modal__wrapper">
-            <label class="contact-us__name">Ваше имя:
-              <input type="text" name="name" id="name" placeholder="Имя Фамилия" required>
-            </label>
-            <label class="contact-us__email">Ваш e-mail:
-              <input type="email" name="email" id="email" placeholder="e-mail" required>
-            </label>
-            <label class="contact-us__comment">Текст письма:
-              <textarea name="comment" id="comment" placeholder="В свободной форме"></textarea>
-            </label>
+            <button type="submit" class="contact-us__submit button">Отправить</button>
           </div>
-          <div class="modal__button-wrapper">
-            <div class="modal__wrapper">
-              <button type="submit" class="contact-us__submit button">Отправить</button>
-            </div>
-          </div>
-        </form>
-        <button class="modal__close modal__close--contact-us" type="button">Закрыть</button>
+        </div>
+      </form>
+      <button class="modal__close modal__close--contact-us" type="button">Закрыть</button>
     </section>
 
     <section class="modal map-modal visually-hidden">
+      <h2 class="visually-hidden">Как до нас добраться</h2>
       <iframe class="map-modal__iframe" src="https://yandex.ru/map-widget/v1/-/CKqQfLOs" width="943" height="449" style="position:relative;" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8"></iframe>
       <button class="modal__close modal__close--map" type="button">Закрыть</button>
     </section>
 
     <section class="modal cart visually-hidden">
-        <div class="modal__wrapper">
-          <p class="cart__heading">Товар добавлен в корзину!</p>
-        </div>
-        <div class="modal__button-wrapper">
-          <a href="#" class="cart__checkout button">Оформить заказ</a>
-          <button class="cart__shopping button" type="button">Продолжить покупки</button>
-        </div>
-        <button class="modal__close modal__close--cart" type="button">Закрыть</button>
+      <h2 class="visually-hidden">Товар добавлен в корзину</h2>
+      <div class="modal__wrapper">
+        <p class="cart__heading">Товар добавлен в корзину!</p>
+      </div>
+      <div class="modal__button-wrapper">
+        <a href="#" class="cart__checkout button">Оформить заказ</a>
+        <button class="cart__shopping button" type="button">Продолжить покупки</button>
+      </div>
+      <button class="modal__close modal__close--cart" type="button">Закрыть</button>
     </section>
 
-  <script src="js/script.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>

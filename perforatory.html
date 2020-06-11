@@ -118,14 +118,16 @@
               <legend>Цена:</legend>
               <div class="price__scale">
                 <div class="price__scale-bar" style="margin-left: 0%; width: 50%">
-                  <div class="price__toggle price__toggle--min" tabindex="0"></div>
-                  <div class="price__toggle price__toggle--max" tabindex="0"></div>
+                  <button class="price__toggle price__toggle--min">Минимальная цена</button>
+                  <button class="price__toggle price__toggle--max">Максимальная цена</button>
                 </div>
               </div>
               <div class="price__controls">
+                  <label for="price__min" class="visually-hidden">Минимальная цена</label>
                   <input type="number" class="price price--min" id="price__min" name="price__min" value="0" step="100">
                   <span class="price__dash">—</span>
-                  <input type="number" class="price price--min" id="price__max" name="price__max" value="30000" step="100">
+                  <label for="price__max" class="visually-hidden">Минимальная цена</label>
+                  <input type="number" class="price price--max" id="price__max" name="price__max" value="30000" step="100">
               </div>
             </fieldset>
 
@@ -187,11 +189,13 @@
 
           <ul class="catalog__list">
             <li class="catalog__item">
-              <div class="catalog__buttons">
-                <button class="catalog__button catalog__button--add-to-cart button" type="button">Купить</button>
-                <button class="catalog__button catalog__button--wishlist button" type="button">В закладки</button>
+              <div class="catalog__item-image">
+                <div class="catalog__buttons">
+                  <button class="catalog__button catalog__button--add-to-cart button" type="button">Купить</button>
+                  <button class="catalog__button catalog__button--wishlist button" type="button">В закладки</button>
+                </div>
+                <img src="img/item-3.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
               </div>
-              <img src="img/item-3.jpg" width="144" height="128" class="catalog__item-image" alt="Перфоратор BOSCH BFG 6000">
               <a class="catalog__item-link" href="#">
                 <h3 class="catalog__item-name">Перфоратор BOSCH BFG 6000</h3>
               </a>
@@ -199,11 +203,13 @@
               <p class="catalog__item-price">25500 Р.</p>
             </li>
             <li class="catalog__item">
-              <div class="catalog__buttons">
-                <button class="catalog__button catalog__button--add-to-cart button" type="button">Купить</button>
-                <button class="catalog__button catalog__button--wishlist button" type="button">В закладки</button>
+              <div class="catalog__item-image">
+                <div class="catalog__buttons">
+                  <button class="catalog__button catalog__button--add-to-cart button" type="button">Купить</button>
+                  <button class="catalog__button catalog__button--wishlist button" type="button">В закладки</button>
+                </div>
+                <img src="img/item-3.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
               </div>
-              <img src="img/item-3.jpg" width="144" height="128" class="catalog__item-image" alt="Перфоратор BOSCH BFG 6000">
               <a class="catalog__item-link" href="#">
                 <h3 class="catalog__item-name">Перфоратор BOSCH BFG 6000</h3>
               </a>
@@ -211,11 +217,13 @@
               <p class="catalog__item-price">25500 Р.</p>
             </li>
             <li class="catalog__item">
-              <div class="catalog__buttons">
-                <button class="catalog__button catalog__button--add-to-cart button" type="button">Купить</button>
-                <button class="catalog__button catalog__button--wishlist button" type="button">В закладки</button>
+              <div class="catalog__item-image">
+                <div class="catalog__buttons">
+                  <button class="catalog__button catalog__button--add-to-cart button" type="button">Купить</button>
+                  <button class="catalog__button catalog__button--wishlist button" type="button">В закладки</button>
+                </div>
+                <img src="img/item-3.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
               </div>
-              <img src="img/item-3.jpg" width="144" height="128" class="catalog__item-image" alt="Перфоратор BOSCH BFG 6000">
               <a class="catalog__item-link" href="#">
                 <h3 class="catalog__item-name">Перфоратор BOSCH BFG 6000</h3>
               </a>
@@ -223,11 +231,13 @@
               <p class="catalog__item-price">25500 Р.</p>
             </li>
             <li class="catalog__item badge badge--new">
-              <div class="catalog__buttons">
-                <button class="catalog__button catalog__button--add-to-cart button" type="button">Купить</button>
-                <button class="catalog__button catalog__button--wishlist button" type="button">В закладки</button>
+              <div class="catalog__item-image">
+                <div class="catalog__buttons">
+                  <button class="catalog__button catalog__button--add-to-cart button" type="button">Купить</button>
+                  <button class="catalog__button catalog__button--wishlist button" type="button">В закладки</button>
+                </div>
+                <img src="img/item-2.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
               </div>
-              <img src="img/item-2.jpg" width="127" height="112" class="catalog__item-image" alt="Перфоратор BOSCH BFG 3000">
               <a class="catalog__item-link" href="#">
                 <h3 class="catalog__item-name">Перфоратор BOSCH BFG 3000</h3>
               </a>
@@ -235,11 +245,13 @@
               <p class="catalog__item-price">15500 Р.</p>
             </li>
             <li class="catalog__item">
-              <div class="catalog__buttons">
-                <button class="catalog__button catalog__button--add-to-cart button" type="button">Купить</button>
-                <button class="catalog__button catalog__button--wishlist button" type="button">В закладки</button>
+              <div class="catalog__item-image">
+                <div class="catalog__buttons">
+                  <button class="catalog__button catalog__button--add-to-cart button" type="button">Купить</button>
+                  <button class="catalog__button catalog__button--wishlist button" type="button">В закладки</button>
+                </div>
+                <img src="img/item-3.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
               </div>
-              <img src="img/item-3.jpg" width="144" height="128" class="catalog__item-image" alt="Перфоратор BOSCH BFG 6000">
               <a class="catalog__item-link" href="#">
                 <h3 class="catalog__item-name">Перфоратор BOSCH BFG 6000</h3>
               </a>
@@ -247,11 +259,13 @@
               <p class="catalog__item-price">25500 Р.</p>
             </li>
             <li class="catalog__item badge badge--new">
-              <div class="catalog__buttons">
-                <button class="catalog__button catalog__button--add-to-cart button" type="button">Купить</button>
-                <button class="catalog__button catalog__button--wishlist button" type="button">В закладки</button>
+              <div class="catalog__item-image">
+                <div class="catalog__buttons">
+                  <button class="catalog__button catalog__button--add-to-cart button" type="button">Купить</button>
+                  <button class="catalog__button catalog__button--wishlist button" type="button">В закладки</button>
+                </div>
+                <img src="img/item-2.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
               </div>
-              <img src="img/item-2.jpg" width="127" height="112" class="catalog__item-image" alt="Перфоратор BOSCH BFG 2000">
               <a class="catalog__item-link" href="#">
                 <h3 class="catalog__item-name">Перфоратор BOSCH BFG 2000</h3>
               </a>
@@ -259,11 +273,13 @@
               <p class="catalog__item-price">12500 Р.</p>
             </li>
             <li class="catalog__item badge badge--new">
-              <div class="catalog__buttons">
-                <button class="catalog__button catalog__button--add-to-cart button" type="button">Купить</button>
-                <button class="catalog__button catalog__button--wishlist button" type="button">В закладки</button>
+              <div class="catalog__item-image">
+                <div class="catalog__buttons">
+                  <button class="catalog__button catalog__button--add-to-cart button" type="button">Купить</button>
+                  <button class="catalog__button catalog__button--wishlist button" type="button">В закладки</button>
+                </div>
+                <img src="img/item-2.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
               </div>
-              <img src="img/item-2.jpg" width="127" height="112" class="catalog__item-image" alt="Перфоратор BOSCH BFG 3000">
               <a class="catalog__item-link" href="#">
                 <h3 class="catalog__item-name">Перфоратор BOSCH BFG 3000</h3>
               </a>
@@ -271,11 +287,13 @@
               <p class="catalog__item-price">15500 Р.</p>
             </li>
             <li class="catalog__item">
-              <div class="catalog__buttons">
-                <button class="catalog__button catalog__button--add-to-cart button" type="button">Купить</button>
-                <button class="catalog__button catalog__button--wishlist button" type="button">В закладки</button>
+              <div class="catalog__item-image">
+                <div class="catalog__buttons">
+                  <button class="catalog__button catalog__button--add-to-cart button" type="button">Купить</button>
+                  <button class="catalog__button catalog__button--wishlist button" type="button">В закладки</button>
+                </div>
+                <img src="img/item-3.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
               </div>
-              <img src="img/item-3.jpg" width="144" height="128" class="catalog__item-image" alt="Перфоратор BOSCH BFG 6000">
               <a class="catalog__item-link" href="#">
                 <h3 class="catalog__item-name">Перфоратор BOSCH BFG 6000</h3>
               </a>
@@ -283,11 +301,13 @@
               <p class="catalog__item-price">25500 Р.</p>
             </li>
             <li class="catalog__item badge badge--new">
-              <div class="catalog__buttons">
-                <button class="catalog__button catalog__button--add-to-cart button" type="button">Купить</button>
-                <button class="catalog__button catalog__button--wishlist button" type="button">В закладки</button>
+              <div class="catalog__item-image">
+                <div class="catalog__buttons">
+                  <button class="catalog__button catalog__button--add-to-cart button" type="button">Купить</button>
+                  <button class="catalog__button catalog__button--wishlist button" type="button">В закладки</button>
+                </div>
+                <img src="img/item-2.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
               </div>
-              <img src="img/item-2.jpg" width="127" height="112" class="catalog__item-image" alt="Перфоратор BOSCH BFG 2000">
               <a class="catalog__item-link" href="#">
                 <h3 class="catalog__item-name">Перфоратор BOSCH BFG 2000</h3>
               </a>
@@ -402,16 +422,17 @@
     </footer>
 
     <section class="modal cart visually-hidden">
-        <div class="modal__wrapper">
-          <p class="cart__heading">Товар добавлен в корзину!</p>
-        </div>
-        <div class="modal__button-wrapper">
-          <a href="#" class="cart__checkout button">Оформить заказ</a>
-          <button class="cart__shopping button" type="button">Продолжить покупки</button>
-        </div>
-        <button class="modal__close modal__close--cart" type="button">Закрыть</button>
+      <h2 class="visually-hidden">Товар добавлен в корзину</h2>
+      <div class="modal__wrapper">
+        <p class="cart__heading">Товар добавлен в корзину!</p>
+      </div>
+      <div class="modal__button-wrapper">
+        <a href="#" class="cart__checkout button">Оформить заказ</a>
+        <button class="cart__shopping button" type="button">Продолжить покупки</button>
+      </div>
+      <button class="modal__close modal__close--cart" type="button">Закрыть</button>
     </section>
 
-  <script src="js/script.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
