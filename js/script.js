@@ -1,12 +1,12 @@
-let allLinks = document.querySelectorAll('a');
-let selectorButtons = document.querySelectorAll('.services__selector-button');
-
 let allModals = document.querySelectorAll('.modal');
 let allModalCloseButtons = document.querySelectorAll('.modal__close');
 
 let allAddToCartButtons = document.querySelectorAll('.catalog__button--add-to-cart');
-let cartCheckout = document.querySelector('.cart__checkout');
+let cartModal = document.querySelector('.cart');
+let cartCheckout = cartModal.querySelector('.cart__checkout');
+let modalContinue = cartModal.querySelector('.cart__shopping');
 
+let selectorButtons = document.querySelectorAll('.services__selector-button');
 let deliveryButton = document.querySelector('.services__selector-button--delivery');
 let warrantyButton = document.querySelector('.services__selector-button--warranty');
 let creditButton = document.querySelector('.services__selector-button--credit');
@@ -16,21 +16,32 @@ let creditInfo = document.querySelector('.services__info--credit');
 
 let contactUsButton = document.querySelector('.information__button--contact-us');
 let contactUsModal = document.querySelector('.contact-us');
-let contactUsModalClose = document.querySelector('.modal__close--contact-us');
-let nameContactUs = document.querySelector('.contact-us__name input');
+let contactUsForm = contactUsModal.querySelector('.contact-us__form');
+let contactUsModalClose = contactUsModal.querySelector('.modal__close--contact-us');
+let nameContactUs = contactUsModal.querySelector('.contact-us__name input');
+let emailContactUs = contactUsModal.querySelector('.contact-us__email input');
+let commentContactUs = contactUsModal.querySelector('.contact-us__comment textarea');
 
 let mapButton = document.querySelector('.information__map');
 let mapModal = document.querySelector('.map-modal');
-let mapModalClose = document.querySelector('.modal__close--map')
+let mapModalClose = mapModal.querySelector('.modal__close--map')
 
 let sliderPrev = document.querySelector('.slider__prev');
 let sliderNext = document.querySelector('.slider__next');
 
-let cartModal = document.querySelector('.cart');
-let modalContinue = document.querySelector('.cart__shopping');
 let slidersContainer = document.querySelector('.slider__list');
 let sliderRadio1 = document.querySelector('.slider__radio--1');
 let sliderRadio2 = document.querySelector('.slider__radio--2');
+
+var isStorageSupport = true;
+var name = '';
+var email = '';
+try {
+  name = localStorage.getItem('name');
+  email = localStorage.getItem('email');
+} catch (err) {
+  isStorageSupport = false;
+}
 
 // Info selector
 for (let selectorButton of selectorButtons) {
@@ -64,6 +75,8 @@ for (let modalCloseButton of allModalCloseButtons) {
     evt.preventDefault();
     for (let modal of allModals) {
       modal.classList.add('visually-hidden');
+      modal.classList.remove('modal-animation');
+      contactUsModal.classList.remove('modal-error');
     }
   }
 }
@@ -72,7 +85,10 @@ for (let modalCloseButton of allModalCloseButtons) {
 for (let modal of allModals) {
   document.addEventListener('keydown', function (evt) {
     if (evt.keyCode === 27) {
+      evt.preventDefault();
       modal.classList.add('visually-hidden');
+      modal.classList.remove('modal-animation');
+      contactUsModal.classList.remove('modal-error');
     }
   });
 }
@@ -96,8 +112,29 @@ modalContinue.onclick = function (evt) {
 contactUsButton.onclick = function (evt) {
   evt.preventDefault();
   contactUsModal.classList.remove('visually-hidden');
-  nameContactUs.focus();
+  contactUsModal.classList.add('modal-animation');
+
+  if (name && email) {
+    nameContactUs.value = name;
+    emailContactUs.value = email;
+    commentContactUs.focus();
+  } else {
+    nameContactUs.focus();
+  }
 }
+
+// Contact us form validation
+contactUsForm.addEventListener('submit', function(evt) {
+  if (!nameContactUs.value || !emailContactUs.value || !commentContactUs.value) {
+    evt.preventDefault();
+    contactUsModal.classList.remove("modal-error");
+    contactUsModal.offsetWidth = contactUsModal.offsetWidth;
+    contactUsModal.classList.add('modal-error');
+  } else {
+    localStorage.setItem('name', nameContactUs.value);
+    localStorage.setItem('email', emailContactUs.value);
+  }
+});
 
 // Map modal open
 mapButton.onclick = function (evt) {
