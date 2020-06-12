@@ -1,37 +1,37 @@
-let allModals = document.querySelectorAll('.modal');
-let allModalCloseButtons = document.querySelectorAll('.modal__close');
+var allModals = document.querySelectorAll('.modal');
+var allModalCloseButtons = document.querySelectorAll('.modal__close');
 
-let allAddToCartButtons = document.querySelectorAll('.catalog__button--add-to-cart');
-let cartModal = document.querySelector('.cart');
-let cartCheckout = cartModal.querySelector('.cart__checkout');
-let modalContinue = cartModal.querySelector('.cart__shopping');
+var allAddToCartButtons = document.querySelectorAll('.catalog__button--add-to-cart');
+var cartModal = document.querySelector('.cart');
+var cartCheckout = cartModal.querySelector('.cart__checkout');
+var modalContinue = cartModal.querySelector('.cart__shopping');
 
-let selectorButtons = document.querySelectorAll('.services__selector-button');
-let deliveryButton = document.querySelector('.services__selector-button--delivery');
-let warrantyButton = document.querySelector('.services__selector-button--warranty');
-let creditButton = document.querySelector('.services__selector-button--credit');
-let deliveryInfo = document.querySelector('.services__info--delivery');
-let warrantyInfo = document.querySelector('.services__info--warranty');
-let creditInfo = document.querySelector('.services__info--credit');
+var selectorButtons = document.querySelectorAll('.services__selector-button');
+var deliveryButton = document.querySelector('.services__selector-button--delivery');
+var warrantyButton = document.querySelector('.services__selector-button--warranty');
+var creditButton = document.querySelector('.services__selector-button--credit');
+var deliveryInfo = document.querySelector('.services__info--delivery');
+var warrantyInfo = document.querySelector('.services__info--warranty');
+var creditInfo = document.querySelector('.services__info--credit');
 
-let contactUsButton = document.querySelector('.information__button--contact-us');
-let contactUsModal = document.querySelector('.contact-us');
-let contactUsForm = contactUsModal.querySelector('.contact-us__form');
-let contactUsModalClose = contactUsModal.querySelector('.modal__close--contact-us');
-let nameContactUs = contactUsModal.querySelector('.contact-us__name input');
-let emailContactUs = contactUsModal.querySelector('.contact-us__email input');
-let commentContactUs = contactUsModal.querySelector('.contact-us__comment textarea');
+var contactUsButton = document.querySelector('.information__button--contact-us');
+var contactUsModal = document.querySelector('.contact-us');
+var contactUsForm = contactUsModal.querySelector('.contact-us__form');
+var contactUsModalClose = contactUsModal.querySelector('.modal__close--contact-us');
+var nameContactUs = contactUsModal.querySelector('.contact-us__name input');
+var emailContactUs = contactUsModal.querySelector('.contact-us__email input');
+var commentContactUs = contactUsModal.querySelector('.contact-us__comment textarea');
 
-let mapButton = document.querySelector('.information__map');
-let mapModal = document.querySelector('.map-modal');
-let mapModalClose = mapModal.querySelector('.modal__close--map')
+var mapButton = document.querySelector('.information__map');
+var mapModal = document.querySelector('.map-modal');
+var mapModalClose = mapModal.querySelector('.modal__close--map')
 
-let sliderPrev = document.querySelector('.slider__prev');
-let sliderNext = document.querySelector('.slider__next');
+var sliderPrev = document.querySelector('.slider__prev');
+var sliderNext = document.querySelector('.slider__next');
 
-let slidersContainer = document.querySelector('.slider__list');
-let sliderRadio1 = document.querySelector('.slider__radio--1');
-let sliderRadio2 = document.querySelector('.slider__radio--2');
+var slidersContainer = document.querySelector('.slider__list');
+var sliderRadio1 = document.querySelector('.slider__radio--1');
+var sliderRadio2 = document.querySelector('.slider__radio--2');
 
 var isStorageSupport = true;
 var name = '';
@@ -44,7 +44,7 @@ try {
 }
 
 // Info selector
-for (let selectorButton of selectorButtons) {
+for (var selectorButton of selectorButtons) {
   selectorButton.onclick = function () {
     selectorButton.setAttribute("disabled", true);
     if (selectorButton === deliveryButton) {
@@ -70,10 +70,10 @@ for (let selectorButton of selectorButtons) {
 }
 
 // Close all modals
-for (let modalCloseButton of allModalCloseButtons) {
+for (var modalCloseButton of allModalCloseButtons) {
   modalCloseButton.onclick = function (evt) {
     evt.preventDefault();
-    for (let modal of allModals) {
+    for (var modal of allModals) {
       modal.classList.add('visually-hidden');
       modal.classList.remove('modal-animation');
       contactUsModal.classList.remove('modal-error');
@@ -82,7 +82,7 @@ for (let modalCloseButton of allModalCloseButtons) {
 }
 
 // Close all modals with ESC key
-for (let modal of allModals) {
+for (var modal of allModals) {
   document.addEventListener('keydown', function (evt) {
     if (evt.keyCode === 27) {
       evt.preventDefault();
@@ -94,7 +94,7 @@ for (let modal of allModals) {
 }
 
 // Add to cart modal open
-for (let addToCartButton of allAddToCartButtons) {
+for (var addToCartButton of allAddToCartButtons) {
   addToCartButton.onclick = function (evt) {
     evt.preventDefault();
     cartModal.classList.remove('visually-hidden');
