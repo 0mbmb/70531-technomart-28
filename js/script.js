@@ -99,7 +99,6 @@ if (slider) {
     });
     sliderRadio1.classList.add('slider__radio--active');
     sliderRadio2.classList.remove('slider__radio--active');
-    // sliderRadio1.checked = true;
   }
 
   sliderRadio1.onclick = function () {
