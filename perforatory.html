@@ -26,6 +26,14 @@
           <a href="#" class="main-header__wishlist link link--icon">Закладки: 0</a>
           <a href="#" class="main-header__cart main-header__cart--notempty link link--icon">Корзина: 10</a>
           <a href="#" class="main-header__checkout link">Оформить заказ</a>
+
+          <a href="#" class="main-header__wishlist link link--icon">Закладки: 0</a>
+          <a href="#" class="main-header__cart main-header__cart--notempty link link--icon">Корзина: 10</a>
+          <a href="#" class="main-header__checkout link">Оформить заказ</a>
+
+          <a href="#" class="main-header__wishlist link link--icon">Закладки: 0</a>
+          <a href="#" class="main-header__cart main-header__cart--notempty link link--icon">Корзина: 10</a>
+          <a href="#" class="main-header__checkout link">Оформить заказ</a>
         </div>
       </div>
 
@@ -34,7 +42,7 @@
         <div class="wrapper">
 
           <div class="main-header__mid">
-            <p class="main-header__desc">Интернет-магазин  строительных материалов  и инструментов для ремонта</p>
+            <p class="main-header__desc">Интернет-магазин строительных материалов и&nbsp;инструментов для ремонта</p>
             <div class="main-header__contacts">
               <a href="tel:+78125550555" class="main-header__phone">+7 (812) 555-05-55</a>
               <p class="main-header__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
@@ -118,16 +126,16 @@
               <legend>Цена:</legend>
               <div class="price__scale">
                 <div class="price__scale-bar" style="margin-left: 0%; width: 50%">
-                  <button class="price__toggle price__toggle--min">Минимальная цена</button>
-                  <button class="price__toggle price__toggle--max">Максимальная цена</button>
+                  <button type="button" class="price__toggle price__toggle--min">Минимальная цена</button>
+                  <button type="button" class="price__toggle price__toggle--max">Максимальная цена</button>
                 </div>
               </div>
               <div class="price__controls">
                   <label for="price__min" class="visually-hidden">Минимальная цена</label>
-                  <input type="number" class="price price--min" id="price__min" name="price__min" value="0" step="100">
+                  <input type="number" class="price price--min" id="price__min" name="price__min" min="0" max="60000" value="0" step="100">
                   <span class="price__dash">—</span>
                   <label for="price__max" class="visually-hidden">Минимальная цена</label>
-                  <input type="number" class="price price--max" id="price__max" name="price__max" value="30000" step="100">
+                  <input type="number" class="price price--max" id="price__max" name="price__max" min="0" max="60000" value="30000" step="100">
               </div>
             </fieldset>
 
@@ -400,7 +408,7 @@
       <div class="main-footer__bottom">
         <div class="wrapper">
           <p class="main-footer__copyright">
-            &copy; 2010–2019 Компания &laquo;Техномарт&raquo; 
+            &copy; 2010–2019 Компания &laquo;Техномарт&raquo;
             Все права защищены
           </p>
           <p class="main-footer__social">

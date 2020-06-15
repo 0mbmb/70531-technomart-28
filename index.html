@@ -34,7 +34,7 @@
         <div class="wrapper">
 
           <div class="main-header__mid">
-            <p class="main-header__desc">Интернет-магазин  строительных материалов  и инструментов для ремонта</p>
+            <p class="main-header__desc">Интернет-магазин строительных материалов и&nbsp;инструментов для ремонта</p>
             <div class="main-header__contacts">
               <a href="tel:+78125550555" class="main-header__phone">+7 (812) 555-05-55</a>
               <p class="main-header__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
@@ -60,7 +60,7 @@
                 <a href="#" class="link link--main-nav">Компания</a>
               </li>
               <li class="main-nav__item">
-                <a href="#" class="link link--main-nav">Каталог</a>
+                <a href="perforatory.html" class="link link--main-nav">Каталог</a>
               </li>
               <li class="main-nav__item">
                 <a href="#" class="link link--main-nav">Новости</a>
@@ -95,26 +95,24 @@
             <li class="slider">
               <button class="slider__prev" type="button">Назад</button>
               <button class="slider__next" type="button">Вперед</button>
-              <fieldset class="slider__radios">
-                <p class="slider__radio-wrapper">
-                  <input type="radio" name="radio" id="radio-1" class="slider__radio slider__radio--1 visually-hidden" checked >
-                  <label for="radio-1" class="slider__label"><span class="visually-hidden">Первый слайд</span></label>
-                </p>
-                <p class="slider__radio-wrapper">
-                  <input type="radio" name="radio" id="radio-2" class="slider__radio slider__radio--2 visually-hidden">
-                  <label for="radio-2" class="slider__label"><span class="visually-hidden">Первый слайд</span></label>
-                </p>
-              </fieldset>
+              <div class="slider__radios">
+                <button type="button" class="slider__radio slider__radio--1 slider__radio--active">Первый слайд</button>
+                <button type="button" class="slider__radio slider__radio--2">Второй слайд</button>
+              </div>
               <ul class="slider__list">
                 <li class="slider__item">
-                  <h3 class="slider__heading">Перфораторы</h3>
-                  <p class="slider__description">Настоящие мужские игрушки</p>
+                  <div class="slider__header">
+                    <h3 class="slider__heading">Перфораторы</h3>
+                    <p class="slider__description">Настоящие мужские игрушки</p>
+                  </div>
                   <a href="perforatory.html" class="button button--slider">Открыть каталог</a>
                   <img class="slider__image" src="img/slider-1.jpg" width="620" height="266" alt="Перфораторы">
                 </li>
                 <li class="slider__item">
-                  <h3 class="slider__heading">Дрели</h3>
-                  <p class="slider__description">Соседям на радость!</p>
+                  <div class="slider__header">
+                    <h3 class="slider__heading">Дрели</h3>
+                    <p class="slider__description">Соседям на радость!</p>
+                  </div>
                   <a href="#" class="button button--slider">Открыть каталог</a>
                   <img class="slider__image" src="img/slider-2.jpg" width="620" height="266" alt="Дрели">
                 </li>
@@ -275,7 +273,7 @@
 
             <ul class="services__selector-list">
               <li class="services__selector-item services__selector-item--delivery">
-                <button class="services__selector-button services__selector-button--delivery" type="button" disabled>Доставка</button>
+                <button class="services__selector-button services__selector-button--active services__selector-button--delivery" type="button" disabled>Доставка</button>
               </li>
               <li class="services__selector-item services__selector-item--warranty">
                 <button class="services__selector-button services__selector-button--warranty" type="button">Гарантия</button>
@@ -292,11 +290,11 @@
               </div>
               <div class="services__info services__info--warranty visually-hidden">
                 <h3 class="section__heading section__heading--service">Гарантия</h3>
-                <p class="services__info-description services__info-description--warranty">Если купленный у нас товар поломается или заискрит,  а также в случае пожара, спровоцированного его возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.</p>
+                <p class="services__info-description services__info-description--warranty">Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.</p>
               </div>
               <div class="services__info services__info--credit visually-hidden">
                 <h3 class="section__heading section__heading--service">Кредит</h3>
-                <p class="services__info-description services__info-description--credit">Залезть в долговую яму стало проще!  Кредитные консультанты придут вам на помощь.</p>
+                <p class="services__info-description services__info-description--credit">Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
                 <a href="#" class="services__info-cta button button--cta">Отправить заявку</a>
               </div>
             </div>
@@ -311,32 +309,26 @@
 
         <h2 class="visually-hidden">Информация о магазине Техномарт</h2>
 
-          <div class="information__about">
-            <h3 class="section__heading section__heading--information">Компания &#171;Техномарт&#187;</h3>
-            <p class="section__description section__description--about">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
-            <p class="information__delivery">Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными компаниями:</p>
-            <ul class="information__delivery-list">
-              <li class="information__delivery-item">
-                Деловые линии
-              </li>
-              <li class="information__delivery-item">
-                Автотрейдинг
-              </li>
-              <li class="information__delivery-item">
-                ЖелДорЭкспедиция
-              </li>
-            </ul>
-            <a href="#" class="information__button information__button--about button">Подробнее о компании</a>
-          </div>
+        <div class="information__about">
+          <h3 class="section__heading section__heading--information">Компания &#171;Техномарт&#187;</h3>
+          <p class="section__description section__description--about">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
+          <p class="information__delivery">Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными компаниями:</p>
+          <ul class="information__delivery-list">
+            <li class="information__delivery-item">Деловые линии</li>
+            <li class="information__delivery-item">Автотрейдинг</li>
+            <li class="information__delivery-item">ЖелДорЭкспедиция</li>
+          </ul>
+          <a href="#" class="information__button information__button--about button">Подробнее о компании</a>
+        </div>
 
-          <div class="information__contacts">
-            <h3 class="section__heading section__heading--information">Контакты</h3>
-            <p class="section__description section__description--contacts">Вы можете забрать товар сами, заехав в наш офис:</p>
-            <a href="#" class="information__map">
-              <img src="img/map.png" class="information__map-image" width="300" height="158" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д.19/8">
-            </a>
-            <a href="contactus.html" class="information__button information__button--contact-us button button--contact-us">Заблудились? Напишите нам!</a>
-          </div>
+        <div class="information__contacts">
+          <h3 class="section__heading section__heading--information">Контакты</h3>
+          <p class="section__description section__description--contacts">Вы можете забрать товар сами, заехав в наш офис:</p>
+          <a href="#" class="information__map">
+            <img src="img/map.png" class="information__map-image" width="300" height="158" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д.19/8">
+          </a>
+          <a href="contactus.html" class="information__button information__button--contact-us button button--contact-us">Заблудились? Напишите нам!</a>
+        </div>
 
       </section>
 
@@ -365,7 +357,7 @@
               <a href="#" class="main-footer__link">Новости</a>
             </li>
             <li class="main-footer__item">
-              <a href="#" class="main-footer__link">Каталог</a>
+              <a href="perforatory.html" class="main-footer__link">Каталог</a>
             </li>
             <li class="main-footer__item">
               <a href="#" class="main-footer__link">Доставка</a>
@@ -395,7 +387,7 @@
       <div class="main-footer__bottom">
         <div class="wrapper">
           <p class="main-footer__copyright">
-            &copy; 2010–2019 Компания &laquo;Техномарт&raquo; 
+            &copy; 2010–2019 Компания &laquo;Техномарт&raquo;
             Все права защищены
           </p>
           <p class="main-footer__social">
@@ -419,7 +411,7 @@
     <section class="modal contact-us visually-hidden">
       <h2 class="visually-hidden">Связаться с нами</h2>
       <form action="https://echo.htmlacademy.ru" method="post" class="contact-us__form">
-        <div class="modal__wrapper">
+        <div class="modal__wrapper modal__wrapper--contact-us">
           <label class="contact-us__name">Ваше имя:
             <input type="text" name="name" id="name" placeholder="Имя Фамилия" required>
           </label>
@@ -430,10 +422,8 @@
             <textarea name="comment" id="comment" placeholder="В свободной форме"></textarea>
           </label>
         </div>
-        <div class="modal__button-wrapper">
-          <div class="modal__wrapper">
-            <button type="submit" class="contact-us__submit button">Отправить</button>
-          </div>
+        <div class="modal__button-wrapper modal__wrapper">
+          <button type="submit" class="contact-us__submit button">Отправить</button>
         </div>
       </form>
       <button class="modal__close modal__close--contact-us" type="button">Закрыть</button>
