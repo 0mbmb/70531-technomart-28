@@ -574,7 +574,6 @@ input[type=radio].visually-hidden {
 
 .link--main-nav {
   display: block;
-  /* padding: 16px 20px; */
   padding: 16px 20px;
 
   background-color: var(--basic-darkblue);
